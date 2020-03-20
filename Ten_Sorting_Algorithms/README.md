@@ -9,3 +9,14 @@
 - Traverse the unsorted window, get the min/max index and swap it with the first value  of the unsorted window
 - iterate n-1 times for the outer loop
 - Time complexity: O(n^2) Space complexity: O(1)
+
+## Counting Sort (stable)
+- Initializa an extra space that stores the frequency of the ith element at the ith index
+- Release the extra space in order
+- Time complexity: O(n+k) Space complexity: O(n+k)
+
+## Merge Sort (stable)
+- Divide the lenght n array into two length n/2 subarrays
+- Repeat
+- sort
+- Time complexity: O(nlogn) Space complexity: O(n)
