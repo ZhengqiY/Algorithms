@@ -31,19 +31,21 @@ the decision for each potential sub-solution
 
 **Alogirthm** Pseudo Code
 
-Backtrack(X[1..i])
+    Backtrack(X[1..i])
 
-  //给出通用回溯算法的一个模板
+      //给出通用回溯算法的一个模板
   
-  //输入: X[1..i]确定了一个解的前面i个有希望的分量
+      //输入: X[1..i]确定了一个解的前面i个有希望的分量
   
-  //输出：代表问题的解的所以元组
+     //输出：代表问题的解的所以元组
   
-  if X[1..i] 是一个解 write X[1..i]
-      else //
+      if X[1..i] 是一个解 write X[1..i]
+  
+        else //
+      
           for 和X[1..i]以及约束相容的每一个元素x in S do
           
-              x[i+1] <---- x
+             x[i+1] <---- x
               
               Backtrack(X[1..i+1])
               
