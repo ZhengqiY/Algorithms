@@ -4,6 +4,9 @@
 
 Backtracking is aimed at solving problems consisting of many combinations.
 
+Backtracking is based on building a space state tree. Each node reflects
+the decision for each potential sub-solution
+
 回溯法可以看作是对穷举查找的一个改进。但和穷举查找不同的是：每次只够造候选解的一个分量，
 然后评估这个部分构造解：如果加上剩下的分量也不可能求得一个解，就绝对不会生成剩下的分量。
 
@@ -21,5 +24,26 @@ Backtracking is aimed at solving problems consisting of many combinations.
 如果这种选择不存在，它再回溯到树的上一层，以此类推。最后，如果找到了一个完整解，它要么就停止（只需要一个解），
 要么继续查找其他可能的解。
 
-Backtracking is based on building a space state tree. Each node reflects
-the decision for each sub-solution
+经典问题：
+- n皇后问题
+- 哈密顿回路问题
+- 子集和问题
+
+**Alogirthm** Pseudo Code
+
+Backtrack(X[1..i])
+
+  //给出通用回溯算法的一个模板
+  
+  //输入: X[1..i]确定了一个解的前面i个有希望的分量
+  
+  //输出：代表问题的解的所以元组
+  
+  if X[1..i] 是一个解 write X[1..i]
+      else //
+          for 和X[1..i]以及约束相容的每一个元素x in S do
+          
+              x[i+1] <---- x
+              
+              Backtrack(X[1..i+1])
+              
