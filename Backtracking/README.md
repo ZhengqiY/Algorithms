@@ -49,3 +49,10 @@ the decision for each potential sub-solution
               
               Backtrack(X[1..i+1])
               
+ **Easier Understanding**
+ 
+       Backtrack(data strucutre)
+       
+       Condition when find a solution
+       
+       Decision if it is possible to find a solution ----> Backtrack(data structure)
