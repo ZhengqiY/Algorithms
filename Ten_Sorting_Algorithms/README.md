@@ -5,11 +5,7 @@
 - Time complexity: O(n^2) Space complexity: O(1)
 
 ## Quick Sort (Unstable)
-- Initialize a pivot element
-- quicksort(initial pivot)
-- Define partition rule
-- update pivot
-- recursion -> quicksort(new pivot)
+- Write out recursive trees to help implementation
 - Time complexity: O(nlogn) Space complexity: O(nlogn)
 
 ## Selection Sort (stable)
