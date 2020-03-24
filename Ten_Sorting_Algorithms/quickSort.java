@@ -11,9 +11,9 @@
                 right--;
             }
             if (left>=right) break;
-            swap(left,right);
+            swap(a(left),a(right));
         }
-        swap(low,right);
+        swap(a(low),a(right));
         return right;
     }
     
